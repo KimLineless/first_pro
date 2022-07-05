@@ -1,0 +1,194 @@
+.wrap {
+    overflow: hidden;
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+}
+
+ul,
+li {
+    text-decoration: no;
+    list-style: none;
+}
+
+
+/* 헤더 영역 */
+header {
+    z-index: 1000;
+    position: fixed;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 60px;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+}
+
+header h1 {
+    text-align: center;
+    width: 30%;
+}
+
+header h1 img {
+    width: 100%;
+}
+
+header>button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+
+header>button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+header>button:first-of-type {
+    left: 5%;
+}
+
+header>button:last-of-type {
+    right: 5%;
+}
+
+header>button i {
+    font-size: 1.5em;
+}
+
+/* gnb영역 */
+
+.gnb {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ffe9d5;
+    bottom: 0;
+    z-index: 1000;
+    border-top: 1px solid #eee;
+}
+
+.gnb>* {
+    white-space: nowrap;
+}
+
+.gnb>a {
+    width: calc(100% / 5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+}
+
+.gnb>a img {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.gnb>a img:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gnb i {
+    font-size: 24px;
+    text-align: center;
+}
+
+.gnb i:hover,
+.gnb i:hover~p {
+    color: #ff4502;
+}
+
+.gnb>a p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.gnb>a:last-of-type {
+    padding-top: 5px;
+}
+
+.search_menu {
+    margin-top: 65px;
+    width: 390px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+
+.search_menu .search {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.search_menu .search > * {
+    position: absolute;
+}
+
+.search>input {
+    margin: 0 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #ffe9d5;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    right: 0;
+    text-align: center;
+}
+
+.search i {
+    font-size: 2rem;
+    right: 15%;
+    top: 7%;
+}
+
+.search a {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    z-index: 1;
+}
+
+.rank {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.rank > * {
+    position: absolute;
+}
+
+
+.rank span:first-of-type {
+    width: 50px;
+    height: 25px;
+    background-color: orangered;
+    text-align: center;
+    line-height: 22px;
+    left: 10px;
+}
+
+.rank span:nth-of-type(2) {
+    left: 25%;
+}
+
+.rank span:nth-of-type(3) {
+    right: 15%;
+}
+
+.rank span:nth-of-type(4) {
+    right: 5%;
+}

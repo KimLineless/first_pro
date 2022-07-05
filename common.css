@@ -1,0 +1,64 @@
+.wrap {
+    overflow: hidden;
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    border: 1px solid rebeccapurple;
+    padding-top: 100px;
+
+}
+
+header>* {
+    position: absolute;
+    border: 1px solid blue;
+}
+
+header>.logo {
+    left: 2rem;
+    top: 1rem;
+}
+
+header>.ham {
+    right: 2rem;
+    top: 1rem;
+}
+
+header>.gnb {
+    position: fixed;
+    width: 80%;
+    top: 100px;
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.3);
+    right: 0;
+    display: none;
+}
+
+header>.gnb.on {
+    display: block;
+}
+
+.sec1 {
+    border: 1px solid red;
+    position: relative;
+    height: 50vh;
+}
+
+.sec1::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+    background-color: #eee;
+}
+
+.sec2 {
+    height: 200vh;
+    background-color: lightcyan;
+}
